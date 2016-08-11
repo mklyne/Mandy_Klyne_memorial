@@ -8,7 +8,7 @@
         <div id="picture" style="background-image: url(http://www.naturaloil.ph/wp-content/uploads/2015/11/John_Doe.jpg)"></div>
         -->
         <div id="picture" 
-             style="background-image: url({{site.url}}/images/mandy.jpg)">
+             style="background-image: url({{site.baseurl}}/images/mandy.jpg)">
         </div>
         <p>{{site.description}}</p>
         <p>{{site.description_2}}</p>
@@ -57,8 +57,12 @@
                 <li>
                     <a href="{{ site.baseurl | prepend: url }}/order.html">Order of service</a>
                 </li>
-
-
+                <li>
+                    <a href="{{ site.baseurl | prepend: url }}/donations.html">Donations</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl | prepend: url }}/thanks.html">Thanks</a>
+                </li>
             </ul>
         </div>
 

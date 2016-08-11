@@ -270,7 +270,7 @@ li.li-hover:hover
 }
 
 .content{
-        font-family: "Roboto Condensed", Arial, sans-serif;
+    font-family: "Roboto Condensed", Arial, sans-serif;
     background-color: #fff;
     font-size: 16px;
     line-height: 1.5em;
@@ -298,6 +298,7 @@ li.li-hover:hover
     font-weight: normal;
     margin-bottom: 5px;
     color: #666666;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -305,6 +306,7 @@ li.li-hover:hover
     font-weight: normal;
     margin-bottom: 5px;
     color: #666666;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -352,6 +354,12 @@ li.li-hover:hover
   border-radius: 2px;
 }
 
+div.related-image > img
+{
+    display: inline-block;
+    height: 120px;
+}
+
 #flickr {
 	// max-width: 195px;
 /*  margin-left:-2px;*/
@@ -374,3 +382,17 @@ li.li-hover:hover
 	padding: 5px;
 }
 
+/* page breaks for printing */
+
+@media all {
+    .page-break { display: none; }
+}
+
+@media print {
+    .page-break { display: block; page-break-before: always; }
+
+    #print-wrapper > #page-content-wrapper {
+        padding: 0px;
+    }
+
+}
